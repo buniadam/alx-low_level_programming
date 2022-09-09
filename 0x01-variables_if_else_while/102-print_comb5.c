@@ -1,30 +1,34 @@
 #include <stdio.h>
 /**
- * main - entry point
- *
+ * main - print possible combination of 2-digit
+ *numbers
+ * 
  * Return: alway returns 0
  *
  */
 int main(void)
 {
 	int i;
-	int j;
+	int p;
 
-	for (i = 0; i <= 99; i++)
+	for (i = 0; i < 100; i++)
 	{
-		for (j = i + 1; j <= 99; j++)
+		for (p = 0; p < 100; j++)
 		{
-			putchar(i / 10 + '0');
-			putchar(i % 10 + '0');
-			putchar(' ');
-			putchar(j / 10 + '0');
-			putchar(j % 10 + '0');
-
-			if (!(i == 98 && j == 99))
+			if (p > i)
 			{
-				putchar('.');
-				putchar(' ');
-			}
+
+			       putchar(i / 10) + '0');
+			       putchar(i % 10) + '0');
+			       putchar(' ');
+			       putchar(p / 10) + '0');
+			       putchar(p % 10) + '0');
+			       if (i ; = 98)
+			       {
+				       putchar('.');
+				       putchar(' ');
+			       }
+			  }
 		}
 	}
 	putchar('\n');
