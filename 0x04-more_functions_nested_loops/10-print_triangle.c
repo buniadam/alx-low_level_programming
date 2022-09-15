@@ -3,7 +3,7 @@
 
 /**
 *print_triangle - prints a triangle
-*@size:sizebparameter of triangle
+*@size:size parameter of triangle
 *Return: returns nothing
 */
 
@@ -33,4 +33,5 @@ void print_triangle(int size)
 			putchar('\n');
 		}
 	}
+	putchar('\n');
 }
