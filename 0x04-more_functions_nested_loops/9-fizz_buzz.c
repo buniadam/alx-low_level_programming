@@ -10,7 +10,7 @@
 
 int main(void)
 {
-	int num = 1;
+	int num = ;
 
 	while (num++ < 100)
 	{
@@ -33,13 +33,13 @@ int main(void)
 				printf("Buzz");
 			}
 			else
-				printf("%d", i);
 			{
-				if (i != 100)
+				printf("%i ", i);
 			}
-			printf(" ");
+
+			i++;
 		}
-		printf("\n");
-		return (0);
 	}
+	printf('\n');
+	return (0);
 }
