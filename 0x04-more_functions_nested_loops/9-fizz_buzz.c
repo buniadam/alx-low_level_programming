@@ -32,14 +32,13 @@ int main(void)
 			{
 				printf("Buzz");
 			}
-			else
-			{
-				printf("%i ", i);
-			}
-
-			i++;
+		}
+		else
+		{
+			putchar('\n');
 		}
 	}
-	printf('\n');
-	return (0);
 }
+
+
+
