@@ -1,43 +1,29 @@
 #include "main.h"
+#include "2-strlen.c"
 
 /**
- * is_numerical - check if it is a digit
- * @n: Number
- * Return: if is a number, return 1 else return 0
- */
-int is_numerical(unsigned int n)
-{
-	return (n >= '0' && n <= '9');
-}
-
- * _atoi - convert a string to an integer
- * @s: String
- * Return: Return the num
+ * _atoi - converts string to integer
+ * @s: string to convert
+ *
+ * Return: returns integer value
  */
 int _atoi(char *s)
 {
-	unsigned int number, i;
-	int sign;
+int i, j, n, x;
 
-	sign = 1;
-	number = 0;
-
-	for (i = 0; s[i] != '\0'; i++)
+	i = n = 0;
+	x = 1;
+	while ((s[i] < '0' || s[i] > '9') && (s[i] != '\0'))
 	{
-		if (is_numerical(s[i]))
-		{
-			number = (s[i] - 48) + number * 10;
-			
-			if (s[i + 1] == ' ')
-				break;
-		}
-		else if (s[i] == '-')
-		{
-			sign *= -1;
-		}
-
+		if (s[i] == '-')
+			x *= -1;
+		i++;
 	}
-
-	return (number * sign);
-
+	j = i;
+	while ((s[j] >= '0') && (s[j] <= '9'))
+	{
+		n = (n * 10) + x * ((s[j]) - '0');
+		j++;
+	}
+	return (n);
 }
