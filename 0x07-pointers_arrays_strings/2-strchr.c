@@ -1,18 +1,22 @@
 #include "main.h"
 /**
- * _memset - sets memory to array
- * @s: array to set
- * @b: value to set it as
- * @n: n amount of times
- * Return: char value of s
+ * _strchr - locates character in string
+ * @s: string to locate char
+ * @c: character to find
+ * Return: character value
  */
-char *_memset(char *s, char b, unsigned int n)
+char *_strchr(char *s, char c)
 {
-	unsigned int i;
+	int i;
 
-	for (i = 0; i < n; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		s[i] = b;
+		if (s[i] == c)
+		{
+			return (s + i);
+		}
 	}
-	return (s);
+	if (s[i] == c)
+		return (s + i);
+	return (0);
 }
