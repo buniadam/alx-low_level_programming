@@ -1,64 +1,18 @@
 #include "main.h"
 /**
- * _strchr - locates character in string
- * @s: string to locate char
- * @c: character to find
- * Return: character value
+ * _memset - sets memory to array
+ * @s: array to set
+ * @b: value to set it as
+ * @n: n amount of times
+ * Return: char value of s
  */
-char *_strchr(char *s, char c)
+char *_memset(char *s, char b, unsigned int n)
 {
-	int i;
+	unsigned int i;
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (i = 0; i < n; i++)
 	{
-		if (s[i] == c)
-		{
-			return (s + i);
-		}
+		s[i] = b;
 	}
-	if (s[i] == c)
-		return (s + i);
-	return (0);
-}#include "main.h"
-/**
- * _strchr - locates character in string
- * @s: string to locate char
- * @c: character to find
- * Return: character value
- */
-char *_strchr(char *s, char c)
-{
-	int i;
-
-	for (i = 0; s[i] != '\0'; i++)
-	{
-		if (s[i] == c)
-		{
-			return (s + i);
-		}
-	}
-	if (s[i] == c)
-		return (s + i);
-	return (0);
-}#include "main.h"
-/**
- * _strchr - locates character in string
- * @s: string to locate char
- * @c: character to find
- * Return: character value
- */
-char *_strchr(char *s, char c)
-{
-	int i;
-
-	for (i = 0; s[i] != '\0'; i++)
-	{
-		if (s[i] == c)
-		{
-			return (s + i);
-		}
-	}
-	if (s[i] == c)
-		return (s + i);
-	return (0);
+	return (s);
 }
