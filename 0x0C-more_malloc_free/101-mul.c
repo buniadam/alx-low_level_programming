@@ -1,14 +1,13 @@
 #include "main.h"
-#include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
  * main - multiply 2 numbers as arguments
  * @argc: number of arguments
  * @argv: arguments
  * Return: 0 success
  */
-
 int main(int argc, char *argv[])
 {
 unsigned long mul;
